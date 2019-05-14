@@ -1,0 +1,8 @@
+:root {
+  --screen-xs: 425px;
+  --screen-sm: 768px;
+  --screen-lg: 1024px;
+  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --white: #fff;
+  --font-sans: 'Roboto Condensed', sans-serif;
+}

@@ -1,0 +1,14 @@
+.navigation {
+    color: var(--white);
+    background-image: var(--gradient);
+    font-family: var(--font-sans);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+}
+
+.navigation--left {
+    font-size: 35px;
+}
