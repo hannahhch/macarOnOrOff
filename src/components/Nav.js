@@ -3,16 +3,20 @@ import '../styles/Nav.css';
 
 export default class NavBar extends Component {
     render() {
-        return (
-           <nav className="navigation">
-              <div className="navigation--left">
-                <div>
-                    The humidity in ___ is {this.props.humidity}.
-                </div>
-              </div>
-           </nav>
-        );
-
-        
+        if (this.props.loaded) {
+            return (
+                <nav className="navigation">
+                    <div className="navigation--left">
+                        <div>
+                            The humidity in your area is {this.props.humidity}.
+                         </div>
+                    </div>
+                </nav>
+            )
+        } else {
+            return (
+                <div></div>
+            )
+        }
     }
 }
