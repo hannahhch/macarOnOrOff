@@ -1,0 +1,65 @@
+.modal-wrapper {
+    color: var(--white);
+    background-image: var(--gradient);
+    font-family: var(--font-sans);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    text-align: center;
+    max-width: 570px;
+}
+
+.modal-wrapper--interior {
+    background-color: white;
+    color: black;
+    margin: 2px;
+    padding: 50px;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 30px;
+    color:  var(--dark-purple);
+    font-size: 22px;
+}
+
+.button {
+    max-width: 100%;
+    text-align: center;
+    padding: 12px 39px 13px;
+    line-height: 1em;
+    border-radius: 50px;
+    transition: all .5s;
+    margin: 5px 15px;
+    font-family: var(--font-sans);
+    font-size: 18px;
+    transition: .5s;
+    min-width: 160px;
+    border: solid 2px transparent;
+}
+
+.button--yes {
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+.button--yes:hover {
+    background-color: white;
+    border-color: var(--dark-purple);
+    color:  var(--dark-purple);
+    cursor: pointer;
+}
+
+.button--no {
+    border-color: var(--dark-purple);
+    color:  var(--dark-purple);
+    background-color: white;
+}
+
+.button--no:hover {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    cursor: pointer;
+}

@@ -4,5 +4,17 @@
   --screen-lg: 1024px;
   --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --white: #fff;
+  --blue-purple: #677AE5;
+  --dark-purple: rgb(117, 77, 165);
+  --purple: rgba(104, 123, 230, .1);
   --font-sans: 'Roboto Condensed', sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--purple);
 }

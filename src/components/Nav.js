@@ -8,7 +8,7 @@ export default class NavBar extends Component {
                 <nav className="navigation">
                     <div className="navigation--left">
                         <div>
-                            The humidity in your area is {this.props.humidity}.
+                            The humidity in your area is {this.props.humidity}%.
                          </div>
                     </div>
                 </nav>
