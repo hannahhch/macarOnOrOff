@@ -23,10 +23,12 @@ export default class Locator extends Component {
         )
         .then(res => {
             console.log(res);
-            this.setState({ 
-                humidity: (res.data.currently.humidity) * 100,
-                loaded: false,
-            });
+            setTimeout(() => {
+                this.setState({
+                    humidity: Math.round((res.data.currently.humidity) * 100),
+                    loaded: true,
+                })
+            }, 5000);
         }).catch(err =>
             console.log(err)
         );

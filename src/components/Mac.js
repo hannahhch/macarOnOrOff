@@ -5,7 +5,6 @@ import MacaronPink from '../images/macaron-pink.svg';
 import MacaronGreen from '../images/macaron-green.svg';
 import MacaronPurple from '../images/macaron-purple.svg';
 
-
 export default class Mac extends Component {
     render() {
         const humidityThreshold = 50;
@@ -21,14 +20,18 @@ export default class Mac extends Component {
             }
         } else {
             return (
-                <div className="loader-wrapper">
-                    <img class="macaron-loader" src={ MacaronBlue } alt=""/>
-                    <img class="macaron-loader" src={ MacaronPink } alt="" />
-                    <img class="macaron-loader" src={ MacaronGreen } alt="" />
-                    <img class="macaron-loader" src={ MacaronPurple } alt="" />
-
-                    {/* <div className="loader"></div>  */}
+                <div>
+                    <div className="loader-wrapper">
+                        <div className="loader">
+                            <img className="loader-item" src={MacaronBlue} alt="" />
+                            <img className="loader-item" src={MacaronPink} alt="" />
+                            <img className="loader-item" src={MacaronGreen} alt="" />
+                            <img className="loader-item" src={MacaronPurple} alt="" />
+                        </div>
+                        <h1 className="loader-title">checking weather conditions...</h1>
+                    </div>
                 </div>
+                
             )
         }
     }
