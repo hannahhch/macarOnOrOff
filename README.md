@@ -1,6 +1,6 @@
-# Macaron Macaoff
+# Macaron Macaroff
 
-## This site is currently _in progress_
+## This site is _in progress_
 
 Todo
-- Grab API and change weather API 
+- Grab API and change weather API (currently broken)
